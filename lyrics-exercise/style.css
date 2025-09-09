@@ -1,0 +1,36 @@
+html {
+    text-align:center;
+    
+  }
+  
+    body {
+        background-color: #003049;
+        color: #fdf0d5;
+      }
+      
+      h1 {
+        color: #fdf0d5;
+      }
+      
+    h1{
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 30px 
+    }
+    h2{
+        font-family: "Bebas Neue", sans-serif;
+    }
+    p{
+        font-family: "Bebas Neue", sans-serif;
+    }
+    p.a {
+        font-style: normal;
+      }
+      
+      p.b {
+        font-style: italic;
+      }
+      
+      p.c {
+        font-style: oblique;
+      }
+    
