@@ -1,0 +1,39 @@
+html {
+  }
+  h1{
+    font-family: "Scary Movie", monospace;
+    font-size: 100px 
+}
+body {
+    background-color: black;
+    color: white;
+  }
+  h1 {
+    color: #23b63c;
+    text-align:center;
+  }
+p{
+    font-family: "Georgia", sans-serif;
+}
+p.a {
+    font-style: normal;
+  }
+  
+  p.b {
+    font-style: italic;
+  }
+  
+  p.c {
+    font-style: bold;
+  }
+
+.mainText{
+    width:50%;
+    margin:0 auto;
+}
+
+.image1{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
