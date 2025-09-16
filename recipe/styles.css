@@ -1,0 +1,29 @@
+html {
+    padding: 5% 15%;
+    margin: 0 7%;
+    font-family: "Libre Baskerville", serif;
+    font-size: 13px;
+    line-height: 1.4;
+}
+body {
+    background-color: #fff6cc;
+  }
+.description {
+    font-size: 12pt;
+    font-style: italic;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    line-height: 1.4;
+}
+h2{
+    text-decoration: underline;
+}
+a:link {
+    color: #fe6a86; 
+}
