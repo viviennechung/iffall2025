@@ -1,0 +1,304 @@
+body {
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 40px;
+}
+
+h1 {
+     font-size: 30px;
+     margin-bottom: 40px;
+}
+
+.button_container {
+    border: 1px solid #ddd;
+    margin: 0 10px 10px 0;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#btn_newyorker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid gray;
+    margin: 100px auto;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    
+  }
+  
+  #btn_newyorker:hover {
+    background-color: gray;
+    border-color: gray;
+  }
+  
+  .logo_newyorker {
+    width: 160px;
+    height: auto;
+    filter: brightness(0);
+    transition: all 0.4s ease;
+  }
+
+  #btn_lyft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 90px;
+    background-color: #fff;
+    border: 3px solid #ff00bf;
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 80px auto;
+    transition: all 0.4s ease;
+  }
+  
+  .logo_lyft {
+    width: 140px;
+    height: auto;
+    filter: brightness(0) saturate(100%) invert(21%) sepia(96%) saturate(6072%) hue-rotate(308deg) brightness(97%) contrast(105%);
+    transition: all 0.4s ease;
+  }
+  
+  #btn_lyft:hover {
+    background-color: #ff00bf;
+    border-color: #ff00bf;
+  }
+  
+  #btn_lyft:hover .logo_lyft {
+    filter: brightness(0) invert(1);
+  }
+
+  #btn_apple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: none;
+    text-decoration: none;
+    margin: 80px auto;
+  }
+  
+  .logo_apple {
+    width: 100px;
+    height: auto;
+    filter: brightness(0); 
+    opacity: 0.9;
+    transition: transform 0.4s ease, filter 0.4s ease, opacity 0.4s ease;
+  }
+  
+  #btn_apple:hover .logo_apple {
+    transform: scale(1.15);
+    filter: brightness(0.5);  
+    opacity: 0.8;             
+  }
+
+  #btn_nike {
+    position: static;        
+    left: auto; top: auto;   
+    transform: none;         
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo_nike {
+    width: 120px;            
+    height: auto;
+    filter: brightness(0);
+    transition: transform 0.3s ease;
+    transform-origin: center;
+  }
+  
+  #btn_nike:hover .logo_nike {
+    animation: nike-hover-shake 0.6s ease-in-out infinite;
+  }
+  
+  @keyframes nike-hover-shake {
+    from { transform: rotate(-7deg); }
+    33% { transform: rotate(4deg); }
+    66% { transform: rotate(-4deg); }
+    to { transform: rotate(7deg); }
+  }
+
+  #btn_moo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo_moo {
+    width: 140px;
+    height: auto;
+    transition: transform 0.4s ease;
+  }
+  
+  #btn_moo:hover .logo_moo {
+    animation: moo-bounce 0.6s ease-in-out;
+  }
+  
+  @keyframes moo-bounce {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-20px) scale(1.05); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(-10px) scale(1.03); }
+    100% { transform: translateY(0); }
+  }
+
+  #btn_cocacola {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo_cocacola {
+    width: 160px;
+    height: auto;
+    filter: brightness(0);  
+    transition: filter 0.5s ease;
+  }
+  
+  #btn_cocacola:hover .logo_cocacola {
+    filter: brightness(0) saturate(100%) invert(13%) sepia(91%) saturate(7473%) hue-rotate(354deg) brightness(99%) contrast(108%);
+  }
+
+#btn_mk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120%;
+    background: none;
+    text-decoration: none;
+  }
+  
+  .mk_logo_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo_mk {
+    width: 100px;
+    height: auto;
+    filter: brightness(0);
+    transition: transform 0.4s ease, filter 0.4s ease;
+  }
+  
+  .mk_text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #000;
+    opacity: 0;
+    margin-top: 10px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    letter-spacing: 1.5px;
+  }
+  
+  #btn_mk:hover .logo_mk {
+    transform: scale(1.1);
+    filter: brightness(0.2);
+  }
+  
+  #btn_mk:hover .mk_text {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+
+  #btn_npr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo_npr {
+    width: 160px;
+    height: auto;
+    filter: grayscale(100%) brightness(0.9) contrast(1.2);
+    transition: filter 0.5s ease;
+  }
+  
+  #btn_npr:hover .logo_npr {
+    filter: grayscale(0%) brightness(1) contrast(1);
+  }
+
+#btn_samsung {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo_samsung {
+    width: 140px;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  #btn_samsung:hover .logo_samsung {
+    transform: scaleX(1.25); 
+  }
+
+  #btn_oldnavy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .logo_oldnavy {
+    width: 140px;
+    height: auto;
+    transition: transform 0.4s ease;
+  }
+  
+  #btn_oldnavy:hover .logo_oldnavy {
+    transform: scale(1.2);
+  }
+
+
+
+
+
