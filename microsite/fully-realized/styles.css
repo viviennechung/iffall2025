@@ -1,0 +1,553 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+h1{
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    color: #fefae0;
+    margin: 0;  
+    padding-left: 3rem;  /* shift to the right */
+    position: relative;
+    z-index: 2;
+}
+
+body {
+    background-color: #606c38;
+  }
+
+  .homepage{
+    background-image: url("images/homepage.jpg");
+    min-height: 85vh;    
+    background-size: cover;             
+    background-position: center;        
+    background-repeat: no-repeat;
+    display: flex;                      
+    align-items: flex-end;              
+    padding: 4rem 2rem; 
+    padding-top: 64px;    
+    border: none;
+    border-radius: 0;
+    overflow: hidden;  
+    height: 80vh;
+    position: relative;           
+  }
+
+  .topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(233, 236, 226, 0.55);  
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    height: 64px;             
+  }
+  
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: clamp(1rem, 4vw, 3rem); 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav a {
+    font-family: "Inria Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    color: #2f352a;
+    text-decoration: none;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.4rem;
+  }
+  
+  .nav a:hover,
+  .nav a:focus {
+    background: rgba(0, 0, 0, 0.07);
+    outline: none;
+  }
+
+    .nav a[aria-current="page"],
+    .nav a.active {
+    font-weight: 700;
+    color: #1b1b1b; 
+}
+
+  .info {
+    background-color: #606c38; 
+    color: #fefae0;            
+    padding: 5rem 2rem;        
+    display: flex;
+    justify-content: center;
+  }
+  
+  .info .text {
+    max-width: 800px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+  }
+  
+  .info h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info p {
+    margin-bottom: 1.2rem;
+  }
+
+  .history {
+    background-image: url("images/history.jpg");
+    min-height: 85vh;    
+    background-size: cover;             
+    background-position: center;        
+    background-repeat: no-repeat;
+    display: flex;                      
+    align-items: flex-end;              
+    padding: 4rem 2rem;    
+    border: none;
+    border-radius: 0;
+    overflow: hidden;  
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem 2rem;
+    padding-top: 64px; 
+    position: relative; 
+  }
+
+.tourism {
+    display: flex;
+    flex-direction: row;      
+    align-items: stretch;     
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tourism-text {
+    background-color: #FEFAE0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: flex-start;   
+    text-align: left;          
+    padding: 0 6rem;           
+    color: #283618;
+    max-width: 800px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+  }
+  
+  .tourism-text h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tourism-text p {
+    max-width: 40ch;
+    margin-bottom: 1rem;
+  }
+  
+  .tourism-image {
+    flex: 1.5;                   
+    background-image: url("images/tourism.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 900px) {
+    .tourism {
+      flex-direction: column;  
+      height: auto;
+    }
+  
+    .tourism-text,
+    .tourism-image {
+      flex: none;
+      width: 100%;
+      height: 50vh;
+    }
+  
+    .tourism-text {
+      padding: 2.5rem 1.5rem;
+    }
+  }
+
+  .geo {
+    background-image: url("images/geography.jpg");
+    min-height: 85vh;    
+    background-size: cover;             
+    background-position: center;        
+    background-repeat: no-repeat;
+    display: flex;                      
+    align-items: flex-end;              
+    padding: 4rem 2rem;    
+    border: none;
+    border-radius: 0;
+    overflow: hidden;  
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem 2rem;
+    padding-top: 64px; 
+    position: relative; 
+  }
+
+  .habitats {
+    background-image: url("images/habitats.jpg");
+    min-height: 85vh;    
+    background-size: cover;             
+    background-position: center;        
+    background-repeat: no-repeat;
+    display: flex;                      
+    align-items: flex-end;              
+    padding: 4rem 2rem;    
+    border: none;
+    border-radius: 0;
+    overflow: hidden;  
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem 2rem;
+    padding-top: 64px; 
+    position: relative; 
+  }
+
+  .activities {
+    background-image: url("images/activities.jpg");
+    min-height: 85vh;    
+    background-size: cover;             
+    background-position: center;        
+    background-repeat: no-repeat;
+    display: flex;                      
+    align-items: flex-end;              
+    padding: 4rem 2rem;    
+    border: none;
+    border-radius: 0;
+    overflow: hidden;  
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 4rem 2rem;
+    padding-top: 64px; 
+    position: relative; 
+  }
+
+  .rocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .rocks-text {
+    background-color: #FEFAE0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: flex-start;   
+    text-align: left;          
+    padding: 0 6rem;           
+    color: #283618;
+    max-width: 800px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+  }
+  
+  .rocks-text h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .rocks-text p {
+    max-width: 40ch;
+    margin-bottom: 1rem;
+  }
+  
+  .rocks-image {
+    flex: 1.5;                   
+    background-image: url("images/rocks.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 900px) {
+    .tourism {
+      flex-direction: column;  
+      height: auto;
+    }
+  
+    .rocks-text,
+    .rocks-image {
+      flex: none;
+      width: 100%;
+      height: 50vh;
+    }
+  
+    .rocks-text {
+      padding: 2.5rem 1.5rem;
+    }
+  }
+
+  .ice {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ice-text {
+    order: 2;
+    background-color: #FEFAE0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: flex-start;   
+    text-align: left;          
+    padding: 0 6rem;           
+    color: #283618;
+    max-width: 800px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+  }
+
+  .ice-text h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .ice-text p {
+    max-width: 40ch;
+    margin-bottom: 1rem;
+  }
+  
+  .ice-image {
+    order: 1;
+    flex: 1.5;                   
+    background-image: url("images/ice.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .wildlife {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .wildlife-text {
+    background-color: #FEFAE0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: flex-start;   
+    text-align: left;          
+    padding: 0 6rem;           
+    color: #283618;
+    max-width: 800px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+  }
+  
+  .wildlife-text h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .wildlife-text p {
+    max-width: 40ch;
+    margin-bottom: 1rem;
+  }
+  
+  .wildlife-image {
+    flex: 1.5;                   
+    background-image: url("images/wildlife.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hiking {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hiking-text {
+    background-color: #FEFAE0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: flex-start;   
+    text-align: left;          
+    padding: 0 6rem;           
+    color: #283618;
+    max-width: 800px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+  }
+  
+  .hiking-text h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .hiking-text p {
+    max-width: 40ch;
+    margin-bottom: 1rem;
+  }
+  
+  .hiking-image {
+    flex: 1.5;                   
+    background-image: url("images/hiking.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .yosemite-image {
+    width: 100%;
+    height: 95vh; 
+    background-image: url("images/yosemite.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+  }
+
+  .climate {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .climate-text {
+    background-color: #FEFAE0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: flex-start;   
+    text-align: left;          
+    padding: 0 6rem;           
+    color: #283618;
+    max-width: 800px;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+  }
+  
+  .climate-text h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .climate-text p {
+    max-width: 40ch;
+    margin-bottom: 1rem;
+  }
+  
+  .climate-image {
+    flex: 1.5;                   
+    background-image: url("images/rocks.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
